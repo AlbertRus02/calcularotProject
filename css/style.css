@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *after {
+  box-sizing: border-box;
+}
+
+:focus, active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-edjust: 100%;
+  -moz-text-size-edjust: 100%;
+  -webkit-text-size-edjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-width: 824px;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.calculator {
+  padding-top: 60px;
+  background-image: url("/img/Group 3bg.png");
+  background-color: #F4FEFE;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.title {
+  max-width: 779px;
+  margin: auto;
+  font-size: 44px;
+  color: #335d84;
+  line-height: 54px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.page_text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+  color: #335d84;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slider__image {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #c4c4c4;
+}
+
+.slider__image > img {
+  border-radius: 50%;
+}
+
+.slider__text {
+  font-size: 18px;
+  color: #335d84;
+  font-weight: 700;
+  text-align: center;
+  max-width: 245px;
+  margin-bottom: 9px;
+  line-height: 22px;
+  margin: auto;
+}
+
+.slider__element__arrow {
+  text-align: center;
+}
+
+.table__container {
+  margin-top: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 44px 0px rgba(63, 169, 245, 0.19);
+  border-radius: 7px;
+  margin-bottom: 18px;
+}
+
+table {
+  width: 100%;
+}
+
+.table__button__block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.table__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 15px;
+  color: #335d84;
+  font-weight: 700;
+  font-size: 17px;
+  border: 1px solid #12dbff;
+  background-color: inherit;
+}
+
+.table__button:hover {
+  background-color: #ddfaff;
+  transition: 0.3s ease;
+}
+
+.table__bottom {
+  border-top: 1px solid #dceded;
+  display: flex;
+  align-items: center;
+  height: 111px;
+  padding-left: 50px;
+}
+
+.table__bottom .table_text {
+  position: relative;
+  font-weight: 700;
+  padding-left: 38px;
+  margin-left: 6px;
+  margin-right: 32px;
+}
+
+.table__bottom .table_text::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: #1bdafa;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+}
+
+.table__left {
+  max-width: 158px !important;
+  text-align: left;
+  font-weight: 700;
+}
+
+.logo__container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 42px;
+}
+
+.logo__container img {
+  object-fit: contain;
+  margin: 0px 35px;
+}
+
+.hexagon_image {
+  width: 84px;
+  height: 84px !important;
+  background-image: url("/img/Polygon 1.png");
+  position: absolute;
+  background-position: center;
+  top: -10px;
+  right: -25px;
+}
+
+.hexagon_image img {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hexagon__table {
+  position: relative;
+  background-image: url("/img/Polygon 2.png");
+  background-repeat: no-repeat;
+  height: 38.5px;
+  max-width: 193px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon__table-text {
+  font-weight: 700;
+  text-align: center;
+  font-size: 16px;
+  color: #335d84;
+}
+
+.hexagon__table::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #1bdafa;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -3px;
+}
+
+th {
+  color: #335d84;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+td,
+.table_text {
+  font-weight: 400;
+  text-align: center;
+  font-size: 16px;
+  color: #335d84;
+}
+
+.modal {
+  padding: 30px 80px;
+}
+
+.modal .row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.modal p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.modal .modal-col1 {
+  margin-right: 30px;
+}
+
+.modal .modal_material {
+  width: 200px;
+  height: 40px;
+  border: 1px solid black;
+  padding-left: 20px;
+  font-size: 16px;
+  color: black;
+  background-color: inherit;
+}
+
+.modal .modal_proc {
+  width: 70px;
+  height: 40px;
+  border: 1px solid black;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.modal .modal__button-add {
+  width: 95%;
+  height: 40px;
+  border: 1px solid black;
+  position: relative;
+}
+
+.owl-nav {
+  display: flex !important;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 40px;
+  position: absolute;
+  top: 40%;
+  box-sizing: border-box;
+}
+
+.owl-carousel .owl-item img {
+  width: auto;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding-top: 30px;
+}
+
+.owl-carousel {
+  touch-action: manipulation;
+}

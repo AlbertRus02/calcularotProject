@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Калькулятор разложения </title>
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.green.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="calculator">
+            <div class="container">
+                <h1 class="title">Калькулятор разложения компонентных биоматериалов</h1>
+                <p class="page_text">Потеря массы образцами ПЭНП с НК после выдержки в почвенном грунте, %.</p>
+                <div id="slider" class="owl-carousel">
+                    <div class="slider__element">
+                        <div class="slider__image">
+                            <img src="img/image 1.png" alt="">
+                            <div class="hexagon_image">
+                                <img src="img/image 2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__text">ПЭ – полиэтилен <br> низкой плотности</div>
+                    </div>
+
+                    <div class="slider__element">
+                        <div class="slider__image">
+                            <img src="img/image 4.png" alt="">
+                        </div>
+                        <div class="slider__text">НК – натуральный каучук</div>
+                    </div>
+
+                    <div class="slider__element">
+                        <div class="slider__image">
+                            <img src="img/image 6.png" alt="">
+                            <div class="hexagon_image">
+                                <img src="img/image 5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__text">ПЛА - полилактид (полимолочная кислота)</div>
+                    </div>
+                </div>
+                <div class="table__container">
+                    <table id="table" cellspacing="40">
+                        <tr>
+                            <th class="table__left">Композиция / изменение массы, % в днях</th>
+                            <th>
+                                183 <br> (6 мес.)
+                            </th>
+                            <th>
+                                365 <br> (12 мес.)
+                            </th>
+                            <th>
+                                515 <br> (17 мес.)
+                            </th>
+                            <th>
+                                730 <br> (24 мес.)
+                            </th>
+                            <th>
+                                930 <br> (31 мес.)
+                            </th>
+                            <th>
+                                1216 <br> (40 мес.)
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="table__left">ПЭ 100</td>
+                            <td>0,16</td>
+                            <td>0,16</td>
+                            <td>0,24</td>
+                            <td>0,28</td>
+                            <td>0,32</td>
+                            <td>0,37</td>
+                        </tr>
+                        <tr>
+                            <td class="table__left">ПЭ/НК 50/50</td>
+                            <td>9,75</td>
+                            <td>33,61</td>
+                            <td>40,43</td>
+                            <td>41,99</td>
+                            <td>40,53</td>
+                            <td>42,19</td>
+                        </tr>
+                        <tr>
+                            <td class="table__left">ПЛА/НК 50/50</td>
+                            <td>37,3</td>
+                            <td>45</td>
+                            <td>51,6</td>
+                            <td>64,2</td>
+                            <td>70</td>
+                            <td>98</td>
+                        </tr>
+                    </table>
+                    <div class="table__button__block">
+                        <a id="btn__modal_open" href="#modal" class="table__button">Добавить</a>
+                    </div>
+                    <div class="table__bottom">
+                        <div class="hexagon__table">
+                            <span class="hexagon__table-text">50 % ПЭ + 50 % НК </span>
+                        </div>
+                        <p class="table_text">разложится примерно за 10 лет</p>
+                        <div class="hexagon__table">
+                            <span class="hexagon__table-text">50 % ПЛА + 50 % НК </span>
+                        </div>
+                        <p class="table_text">разложится примерно за 10 лет</p>
+                    </div>
+                </div>
+                <div class="logo__container">
+                    <img src="img/Логотип_синий-02 1.png" alt="">
+                    <img src="img/Vector-Smart-Object 2.png" alt="">
+                </div>
+            </div>
+            <div id="result_form"></div> 
+        </section>
+        <div id="modal" class="modal">
+            <form method="POST" id="modal__form" name="form">
+                <div class="row">
+                    <div class="modal-col1">
+                        <p>Материал 1</p>
+                        <select id="material1" class="modal_material" name="material1">
+                            <option value="ПЛА">ПЛА</option>
+                            <option value="ПЭ">ПЭ</option>
+                            <option value="НК">НК</option>
+                        </select>
+                    </div>
+                    <div class="modal-col2">
+                        <p>%</p>
+                        <input id="value1" class="modal_proc" type="number" name="value1" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="modal-col1">
+                        <p>Материал 2</p>
+                        <select class="modal_material" name="material2">
+                            <option value="ПЭ">ПЭ</option>
+                            <option value="ПЛА">ПЛА</option>
+                            <option value="НК">НК</option>
+                        </select>
+                    </div>
+                    <div class="modal-col2">
+                        <p>%</p>
+                        <input class="modal_proc" type="number" name="value2">
+                    </div>
+                </div>
+                <button id="modal__button-add" type="submit" class="modal__button-add">Добавить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<!-- jquery modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+<!-- slider -->
+<script src="owl-carousel/owl.carousel.min.js"></script>
+
+<!-- main js -->
+<script src="js/script.js"></script>
+
+
+
+</html>
